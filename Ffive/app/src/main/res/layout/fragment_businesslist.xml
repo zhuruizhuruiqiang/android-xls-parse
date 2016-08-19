@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.zr.ffive"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical" 
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/businesslist_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:background="@color/bblueblack">        
+	    
+	    <Button
+	        android:id="@+id/businesslist_button_save"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/business_list_save"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:background="@color/bblueblack"/>
+        
+	    <Button
+	        android:id="@+id/businesslist_button_report"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/businesslist_button_save"
+	        android:layout_toEndOf="@+id/businesslist_button_save"
+	        android:text="@string/business_list_report"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:background="@color/bblueblack"/>
+
+	    <Button
+	        android:id="@+id/businesslist_button_load"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@+id/businesslist_button_save"
+	        android:layout_toStartOf="@+id/businesslist_button_save"
+	        android:background="@color/bblueblack"
+	        android:text="@string/business_list_load"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/businesslist_textView_prolist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businesslist_buttons"
+        android:gravity="center_horizontal"
+        android:background="@color/aqua"
+        android:text="@string/business_list"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <com.zr.dslv.DragSortListView
+        android:id="@+id/businesslist_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/businesslist_button_addbusines"
+        android:layout_below="@+id/businesslist_textView_prolist"
+        android:layout_margin="3dp"
+        android:background="@color/whitesmoke"
+        android:dividerHeight="1px"
+        android:padding="3dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@+id/businessitem_drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:max_drag_scroll_speed="0.5"
+        dslv:slide_shuffle_speed="0.3"
+        dslv:use_default_controller="true" >
+
+    </com.zr.dslv.DragSortListView>
+    
+    <Button
+        android:id="@+id/businesslist_button_addbusines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/business_list_add" 
+        android:gravity="center"
+        android:background="@color/bblueblack"
+        android:color="@color/peachpuff"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

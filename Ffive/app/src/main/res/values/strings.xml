@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash">欢迎进入评估软件,即将进入引导界面</string>
+    <string name="guide_begin">请按照以下要求完成初始化设置：右滑完成项目库文件目录设置</string>
+	<string name="config_dir">请设置标准库文件目录：</string>
+	<string name="config_dirbu">浏览</string>
+	<string name="config_ok">完成设置，进入应用</string>	
+	
+    <string name="app_name">评估</string>
+    <string name="action_settings">设置</string>
+
+    <string name="app_version_name">项目和流程版本：</string>
+    <string name="app_depart_name">中国铁道科学研究院运输及经济研究所</string>
+    <string name="app_part_logo">院LOGO</string>
+	<string name="app_full_name1">高速铁路故障模拟</string>
+	<string name="app_full_name2">和应急演练评估系统</string>
+	
+	<string name="recordpersonname">记录人员:</string>
+	<string name="evaluate_role">评估角色:</string>
+	
+	<string name="role_driver">司机</string>
+	<string name="role_follwer">随车机械室</string>
+	<string name="role_dispatcher">列车调度员</string>
+	<string name="role_guarder">列车长</string>
+	<string name="role_transporter">客运人员</string>
+	
+	<string name="enterintomain">进入系统</string>	
+	
+	<string name="ok">确定</string>
+	<string name="filename">文件名称</string>
+	<string name="time">时间</string>
+	<string name="desp">描述</string>
+		
+	<string name="business_list">项目列表</string>	
+	<string name="business_list_load">加载</string>
+	<string name="business_list_save">保存</string>
+	<string name="business_list_report">报告</string>
+	<string name="business_list_add">增加项目</string>
+	<string name="jihua_list">计划列表</string>
+	<string name="business_list_delete">-</string>
+	<string name="business_item">business项目</string>
+
+	<string name="business_message">信息</string>	
+	<string name="business_flow">流程</string>
+	<string name="business_problem">问题</string>
+	<string name="business_add_flow">增加流程</string>
+	<string name="business_add_problem">增加问题</string>
+	
+	<string name="business_add_list">增加条目</string>
+	
+	<string name="business_param">参数</string>	
+	<string name="business_pro">问题</string>
+	<string name="business_video">影像</string>
+	
+	<string name="busflow_video_start">查看下一个</string>
+	<string name="busflow_video_chakan">查看</string>
+	<string name="busflow_video_paizhao">拍照</string>
+	<string name="busflow_video_shexiang">摄像</string>
+</resources>

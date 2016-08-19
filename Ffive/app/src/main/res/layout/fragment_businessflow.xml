@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/business_message_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:background="@color/bblueblack">
+        	        
+	    <ImageView
+	        android:id="@+id/business_flow_imageView_return"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/business_flow_button_flow"
+	        android:layout_alignTop="@+id/business_flow_button_flow"
+	        android:layout_toLeftOf="@+id/business_flow_button_message"
+	        android:layout_alignParentStart="true"
+       		android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/returnp" />
+	    
+	    <Button
+	        android:id="@+id/business_flow_button_flow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/business_flow"
+	        android:background="@color/bblueblack"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <Button
+	        android:id="@+id/business_flow_button_message"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/business_flow_button_flow"
+	        android:background="@color/bblueblack"
+	        android:text="@string/business_message"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:textColor="@color/darkgray"/>
+	
+	    <Button
+	        android:id="@+id/business_flow_button_problem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/business_flow_button_flow"
+	        android:background="@color/bblueblack"
+	        android:text="@string/business_problem"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/darkgray" />
+    </RelativeLayout>
+
+    
+    <TextView
+        android:id="@+id/business_flow_textView_prolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/business_message_buttons"
+        android:background="@color/aqua"
+        android:gravity="center_horizontal"
+        android:text="@string/business_list"
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <ListView
+        android:id="@+id/business_flow_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_flow_textView_prolist"
+        android:layout_alignParentStart="true"
+       	android:layout_alignParentLeft="true"
+        android:divider="@color/gray"   
+		android:dividerHeight="1px"
+		android:textAppearance="?android:attr/textAppearanceLarge">
+    </ListView>  
+    
+    <Button
+        android:id="@+id/business_flow_button_addflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/bblueblack"
+        android:text="@string/business_add_flow"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <RelativeLayout 
+        android:id="@+id/business_flow_addlist_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_above="@+id/business_flow_button_addflow"
+	    android:layout_gravity="bottom"	    
+	    android:paddingBottom="3dp"
+	    android:paddingTop="3dp"
+	    android:visibility="gone">
+	
+	   <EditText
+	        android:id="@+id/business_flow_addlist_editText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/business_flow_addlist_button"
+	        android:layout_alignParentStart="true"
+       		android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/business_flow_addlist_button"
+	        android:ems="10" 
+	        android:textAppearance="?android:attr/textAppearanceLarge">
+	    </EditText>
+	
+	    <Button
+	        android:id="@+id/business_flow_addlist_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="@string/business_add_list" 
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	</RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/report_textView_prolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/aqua"
+        android:gravity="center_horizontal"
+        android:text="@string/business_list"
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/report_textView_recordrole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+       		android:layout_alignParentLeft="true"
+        android:layout_below="@+id/report_textView_prolist"
+        android:layout_marginLeft="30dp"
+        android:text="@string/evaluate_role"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/report_textView_recordrolenaeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_textView_prolist"
+        android:layout_toRightOf="@+id/report_textView_recordrole"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/report_textView_recordperson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_textView_prolist"
+        android:layout_toStartOf="@+id/report_textView_recordpersonnaeme"
+        android:layout_toLeftOf="@+id/report_textView_recordpersonnaeme"
+        android:text="@string/recordpersonname"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/report_textView_recordpersonnaeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/report_textView_prolist"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+   
+    <ListView
+        android:id="@+id/report_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:layout_below="@+id/report_textView_recordrole" 
+        android:divider="@color/gray"   
+		android:dividerHeight="1px"
+		android:textAppearance="?android:attr/textAppearanceLarge">
+    </ListView>
+
+    
+    
+</RelativeLayout>

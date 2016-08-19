@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_main" >
+
+    <TextView
+        android:id="@+id/textView_appversionname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_version_name"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_appversionname"
+        android:layout_alignBottom="@+id/textView_appversionname"
+        android:layout_toRightOf="@+id/textView_appversionname"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_appdepartname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_depart_name"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_appfullname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/app_full_name1"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView_appfullname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_appfullname1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_full_name2"
+        android:textSize="40sp" />
+
+    
+
+    <TableLayout
+        android:id="@+id/tableLayout_appmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:padding="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRow_appmainlayrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView_recordpersonname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recordpersonname"
+                android:textSize="20sp" />
+
+           <EditText
+                android:id="@+id/editText_recordpersonname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" >
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow__appmainlayrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textView_evaluaterole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/evaluate_role"
+                android:textSize="20sp" />
+
+           <Spinner
+		        android:id="@+id/spinner1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:spinnerMode="dialog"
+		        android:entries="@array/evaluated_role"      	
+            />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_enterintomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_appfullname1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView_appfullname1"
+        android:layout_marginBottom="30dp"
+        android:background="@color/lightslategray"
+        android:text="@string/enterintomain" />
+
+    <TextView
+        android:id="@+id/textView_apppartlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_appfullname1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_part_logo" />
+
+
+
+</RelativeLayout>

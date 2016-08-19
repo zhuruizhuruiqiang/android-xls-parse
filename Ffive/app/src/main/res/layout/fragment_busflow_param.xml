@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:id="@+id/busflow_param_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:background="@color/bblueblack">
+        
+        <ImageView
+	        android:id="@+id/busflow_param_imageView_return"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/busflow_param_button_prob"
+	        android:layout_alignTop="@+id/busflow_param_button_prob"
+	        android:layout_toLeftOf="@+id/busflow_param_button_param"
+	        android:layout_alignParentStart="true"
+       		android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/returnp" />
+	    
+	    <Button
+	        android:id="@+id/busflow_param_button_prob"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/business_pro"
+	        android:background="@color/bblueblack"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:textColor="@color/darkgray"/>
+	    
+	    <Button
+	        android:id="@+id/busflow_param_button_param"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/busflow_param_button_prob"
+	        android:background="@color/bblueblack"
+	        android:text="@string/business_param"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <Button
+	        android:id="@+id/busflow_param_button_video"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/busflow_param_button_prob"
+	        android:background="@color/bblueblack"
+	        android:text="@string/business_video"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/darkgray" />
+    
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/busflow_param_textView_prolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+	 	android:layout_below="@+id/busflow_param_buttons"
+        android:background="@color/aqua"
+        android:gravity="center_horizontal"
+        android:text="@string/business_list"
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    
+    <LinearLayout 
+        android:id="@+id/busflow_param_flow"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:background="@color/ivory"
+	    android:layout_below="@+id/busflow_param_textView_prolist"
+	    >
+
+	    <TextView
+	         android:id="@+id/busflow_param_textView_flowtime"
+	         android:layout_width="0dp"
+	         android:layout_height="wrap_content"         
+	         android:layout_toLeftOf="@+id/busflow_param_textView_flowdesp"
+	         android:layout_weight="1"
+	         android:layout_marginLeft="30dp"
+	         android:text="@string/time"
+	         android:textAppearance="?android:attr/textAppearanceLarge" />
+	     
+	     <TextView
+	         android:id="@+id/busflow_param_textView_flowdesp"
+	         android:layout_width="0dp"
+	         android:layout_height="wrap_content"
+	         android:layout_centerHorizontal="true"
+	         android:text="@string/desp"
+	         android:layout_weight="4"
+	         android:layout_marginRight="30dp"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />    
+ 
+	</LinearLayout >
+
+     <ListView
+         android:id="@+id/busflow_param_listView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+       		android:layout_alignParentLeft="true"
+         android:layout_below="@+id/busflow_param_flow"
+         android:background="@color/white"
+         android:divider="@color/gray"
+         android:dividerHeight="1px"
+         android:textAppearance="?android:attr/textAppearanceLarge" >
+     </ListView>
+     
+</RelativeLayout>

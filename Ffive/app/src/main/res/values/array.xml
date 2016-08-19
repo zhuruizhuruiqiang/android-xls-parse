@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="evaluated_role">
+        <item>司机</item>
+        <item>随车机械师</item>
+        <item>列车调度员</item>
+        <item>客运人员</item>
+    </string-array>
+</resources>
