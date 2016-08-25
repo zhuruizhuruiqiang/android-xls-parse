@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/bblueblack">   
+    
+    <TextView
+        android:id="@+id/loadstafile_textView_prolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/aqua"
+        android:gravity="center_horizontal"
+        android:text="@string/jihua_list"
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+   
+    
+    <ListView
+        android:id="@+id/loadstafile_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loadstafile_button_ok"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loadstafile_textView_prolist" 
+        android:background="@color/white"
+        android:divider="@color/gray"   
+		android:dividerHeight="1px"
+		android:textAppearance="?android:attr/textAppearanceLarge">
+    </ListView>  
+     
+    <Button
+        android:id="@+id/loadstafile_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/ok" 
+        android:gravity="center"
+        android:background="@color/bblueblack"
+        android:color="@color/peachpuff"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+</RelativeLayout>

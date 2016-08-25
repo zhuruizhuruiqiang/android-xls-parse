@@ -1,0 +1,38 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  	android:layout_height="50dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/businessitem_drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0"
+        android:layout_centerVertical="true"
+        android:background="@drawable/drag"/>
+
+	<TextView
+        android:id="@+id/businesslistitem_textView_businessname"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:layout_toRightOf="@+id/businessitem_drag_handle"
+        android:layout_centerVertical="true"       
+        android:gravity="center_vertical"
+        android:text="@string/business_item"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:layout_weight="1"/>
+
+	<ImageView
+	    android:id="@+id/businessitem_button_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/delete_x" 
+	    android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
